@@ -16,7 +16,7 @@ You can also select a mode using variables by opening a CMD and mentioning the m
 
 **Example:**
 
-```Instant-Cleaner_v1.0.0.exe normal```
+```Instant-Cleaner_v1.0.1.exe normal```
 
 ## Modes
 
