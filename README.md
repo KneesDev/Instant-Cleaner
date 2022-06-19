@@ -13,7 +13,7 @@ You can also select a mode using variables by opening a CMD and mentioning the m
 - normal for Normal Mode
 - fast for Fast-Mode
 - exp for Experimental
-- no variable for Minimal (forgot to code it for that mode yet again)
+- no variable for Minimal *(forgot to code it for that mode yet again)*
 
 **Example:**
 
