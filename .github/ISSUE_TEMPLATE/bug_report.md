@@ -2,7 +2,7 @@
 name: Bug report
 about: Report a bug in the app as detailed as possible
 title: ''
-labels: ''
+labels: bug, invalid
 assignees: ''
 
 ---
