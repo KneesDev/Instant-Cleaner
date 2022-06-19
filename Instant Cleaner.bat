@@ -3,7 +3,7 @@ title Instant Cleaner by KneesDev
 IF "%~1" == "normal" GOTO normal
 IF "%~1" == "fast" GOTO fast
 IF "%~1" == "exp" GOTO exp
-echo Instant Cleaner version 1.0.1
+echo Instant Cleaner version 1.0.2 (pre-release)
 echo.
 echo Developed by KneesDev
 echo https://github.com/kneesdev
@@ -15,11 +15,13 @@ echo Please consider donating for the work I've done so far:
 echo https://paypal.me/kneesdev
 ping localhost -n 05 >nul
 :modeselect
+color
 cls
 echo Select a mode to continue with:
 echo [1] Normal
 echo [2] Fast-mode
-echo [3] Experimental (beta)
+echo [3] Experimental
+echo [4] Minimal
 echo.
 echo (don't forget to confirm your selection by pressing Enter)
 echo.
@@ -28,8 +30,10 @@ if '%mode%'=='none' goto reset
 if '%mode%'=='1' goto normal
 if '%mode%'=='2' goto fast
 if '%mode%'=='3' goto exp
+if '%mode%'=='4' goto min
 
 :reset
+color
 goto modeselect
 
 :normal
@@ -73,7 +77,21 @@ goto modeselect
 
 :fast
 cls
-echo Attempting to launch command...
+color 0c
+echo Fast-mode isn't recommended as it is pretty buggy on most devices and there's a chance that some files get corrupted!
+echo Do you want to proceed?
+echo.
+echo (accepted input is Y/N)
+echo.
+set /p fastm=
+if '%fastm%'=='none' goto reset
+if '%fastm%'=='Y' goto fastproc
+if '%fastm%'=='N' goto modeselect
+if '%fastm%'=='y' goto fastproc
+if '%fastm%'=='n' goto modeselect
+:fastproc
+color
+echo Fast-mode is running...
 %windir%\system32\rundll32.exe advapi32.dll,ProcessIdleTasks
 echo Fast-mode operation finished.
 ping localhost -n 03 >nul
@@ -81,10 +99,9 @@ goto modeselect
 
 :exp
 cls
-echo Cleaning DNS records from cache...
+echo Flushing DNS...
 ipconfig /FlushDNS
 ping localhost -n 01 >nul
-echo Optimizing C: drive....
 defrag c:
 echo Cleaning junk files...
 cleanmgr /verylowdisk /d
@@ -94,5 +111,14 @@ md C:\Windows\prefetch
 echo Cleaning Microsoft Store cache...
 wsreset.exe
 echo Experimental operation finished.
+ping localhost -n 03 >nul
+goto modeselect
+
+:min
+cls
+echo Minimal is running...
+rd %temp%
+mkdir %temp%
+echo Minimal operation finished.
 ping localhost -n 03 >nul
 goto modeselect
