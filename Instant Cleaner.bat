@@ -3,19 +3,16 @@ title Instant Cleaner by KneesDev
 IF "%~1" == "normal" GOTO normal
 IF "%~1" == "fast" GOTO fast
 IF "%~1" == "exp" GOTO exp
-echo Instant Cleaner version 1.0.2 (pre-release)
+IF "%~1" == "min" GOTO min
+echo Instant Cleaner version 1.0.2
 echo.
 echo Developed by KneesDev
 echo https://github.com/kneesdev
+powershell "[console]::beep(700,200)"
 ping localhost -n 02 >nul
-cls
-echo An app development takes so much time. I develop apps and get nothing in return.
-echo.
-echo Please consider donating for the work I've done so far:
-echo https://paypal.me/kneesdev
-ping localhost -n 05 >nul
+powershell "[console]::beep(650,400)"
 :modeselect
-color
+color 07
 cls
 echo Select a mode to continue with:
 echo [1] Normal
@@ -33,7 +30,6 @@ if '%mode%'=='3' goto exp
 if '%mode%'=='4' goto min
 
 :reset
-color
 goto modeselect
 
 :normal
@@ -102,7 +98,6 @@ cls
 echo Flushing DNS...
 ipconfig /FlushDNS
 ping localhost -n 01 >nul
-defrag c:
 echo Cleaning junk files...
 cleanmgr /verylowdisk /d
 echo Cleaning Prefetch folder...
@@ -117,8 +112,7 @@ goto modeselect
 :min
 cls
 echo Minimal is running...
-rd %temp%
-mkdir %temp%
+del %temp%\*.* /f /q
 echo Minimal operation finished.
 ping localhost -n 03 >nul
 goto modeselect
