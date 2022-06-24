@@ -1,0 +1,14 @@
+C:\Users\KneesDev\source\repos\Instant Cleaner\bin\Debug\Instant Cleaner.exe.config
+C:\Users\KneesDev\source\repos\Instant Cleaner\bin\Debug\Instant Cleaner.exe
+C:\Users\KneesDev\source\repos\Instant Cleaner\bin\Debug\Instant Cleaner.pdb
+C:\Users\KneesDev\source\repos\Instant Cleaner\bin\Debug\MaterialSkin.dll
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.csproj.SuggestedBindingRedirects.cache
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant_Cleaner.frmControl.resources
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant_Cleaner.frmSplash.resources
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant_Cleaner.Properties.Resources.resources
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.csproj.GenerateResource.cache
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.csproj.CoreCompileInputs.cache
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.csproj.CopyComplete
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.exe
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.pdb
+C:\Users\KneesDev\source\repos\Instant Cleaner\obj\Debug\Instant Cleaner.csproj.AssemblyReference.cache
