@@ -1,6 +1,6 @@
 # Instant Cleaner
 
-A fast PC cleaner app "programmed" in Batch.
+A fast PC cleaner app programmed in C# and Batch.
 
 ## Usage
 
